@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ip"/>
+<button onclick="countElement()" id="Count">Count</button>
+<p id="rs"></p>
+<script>
+
+    function countElement() {
+        let a = document.getElementById('ip').value;
+        for (let i = 0; i <= a.length; i++) {
+            document.getElementById('rs').innerHTML = i;
+        }
+    }
+</script>
+
+</body>
+</html>
